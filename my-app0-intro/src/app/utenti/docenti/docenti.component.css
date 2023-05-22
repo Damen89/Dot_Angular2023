@@ -1,0 +1,16 @@
+.dimDiv{
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+  float: left;
+  margin: 30px;
+  padding: 10px;
+}
+
+.bgRed{
+  background-color: lightcoral;
+}
+
+.bgGreen{
+  background-color: lightgreen;
+}

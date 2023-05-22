@@ -1,3 +1,21 @@
 <h2>Lista Docenti</h2>
 
+<div class="dimDiv"
+*ngFor="let docente of elencoDocenti"
+[ngClass]="{bgGreen: docente.presenza, bgRed: !docente.presenza}">
+
+  <h4>{{docente.nome}}</h4>
+  <p>materia: {{docente.materia}}</p>
+
+  <p *ngIf="docente.presenza; else noPresente">
+    presenza: {{docente.presenza}}
+  </p>
+
+  <!-- Local reference -->
+  <ng-template #noPresente>
+   <p> Il docente non è presente </p>
+  </ng-template>
+
+</div>
+
 
