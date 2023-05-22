@@ -1,0 +1,27 @@
+<h2>Lista Studenti</h2>
+
+<p>{{mioStudente.nome}} {{mioStudente.cognome}}</p>
+<p>{{mioStudente2.nome}} {{mioStudente2.cognome}}</p>
+<p>{{mioStudente3.nome}} {{mioStudente3.cognome}}</p>
+
+<ul>
+  <!-- DOM = Document Object Model -->
+  <li
+  *ngFor="let studente of listaStudenti"
+  [ngClass]="{presente: studente.presenza == true, noPresente: studente.presenza == false}">
+
+    {{studente.nome}} {{studente.cognome}} -<span *ngIf="studente.presenza"> presente: {{studente.presenza}} </span>
+  </li>
+</ul>
+
+
+<p [ngStyle]="{'background-color': getBg()}">{{mioStudente5.nome}} {{mioStudente5.cognome}} {{mioStudente5.presenza}}</p>
+
+
+<p [textContent]="getName()"></p>
+<p> {{mioStudente4.nome}} </p>
+
+<p class={{getColor()}}>
+  Ciao
+</p>
+

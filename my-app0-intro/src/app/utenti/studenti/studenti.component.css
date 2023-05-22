@@ -1,0 +1,18 @@
+.presente{
+  background-color: lightgreen;
+}
+
+.noPresente{
+  background-color: lightcoral;
+}
+
+
+.online{
+  background-color: lightgreen;
+  text-decoration: underline;
+}
+
+.offline{
+  background-color: lightcoral;
+  text-decoration: line-through;
+}
