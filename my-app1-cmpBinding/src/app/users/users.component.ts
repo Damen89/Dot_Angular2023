@@ -8,8 +8,10 @@ import { User } from './model/user.model';
 })
 export class UsersComponent {
 
+  user: User;
 
   onAggiungiUser(user: User){
     console.log("Dal component Genitore", user);
+    this.user = user;
   }
 }

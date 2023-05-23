@@ -7,7 +7,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
 import { UsersComponent } from './users/users.component';
 import { AddUserComponent } from './users/add-user/add-user.component';
-import { UserComponent } from './users/user/user.component';
+import UserComponent from './users/lista-users/user/user.component';
+import { ListaUsersComponent } from './users/lista-users/lista-users.component';
+import { GiochiComponent } from './giochi/giochi.component';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +19,9 @@ import { UserComponent } from './users/user/user.component';
     DashboardComponent,
     UsersComponent,
     AddUserComponent,
-    UserComponent
+    UserComponent,
+    ListaUsersComponent,
+    GiochiComponent
   ],
   imports: [
     BrowserModule,

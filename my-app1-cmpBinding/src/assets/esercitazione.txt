@@ -1,0 +1,18 @@
+Crea i seguenti component con la seguente struttura:
+- giochi
+    - listaGiochi
+    - creaGiochi
+
+Il gioco deve avere le seguenti propr: nome, tipo, voto, immagine
+
+Oss su tipo:
+il tipo determina il colore della card che ospita le informazioni
+  - da tavolo ( colore arancione )
+  - videogame ( colore blu )
+  - online ( colore verde )
+
+Oss su voto:
+ogni gioco viene creato con votazione = 0. Su ogni card ci saranno due pulsanti (like, dislike) che faranno salire o scendere la votazione del singolo giuoco.
+
+Oss su giochi:
+crea una lista di almeno due giochi di default
