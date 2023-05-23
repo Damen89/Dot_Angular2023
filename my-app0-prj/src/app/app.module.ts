@@ -9,6 +9,7 @@ import { PizzaComponent } from './pizze/lista-pizze/pizza/pizza.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     AddPizzaComponent,
     ListaPizzeComponent,
     PizzaComponent,
-    NavbarComponent
+    NavbarComponent,
+
   ],
   imports: [
     BrowserModule,
