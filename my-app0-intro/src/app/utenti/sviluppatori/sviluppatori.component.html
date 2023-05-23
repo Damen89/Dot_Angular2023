@@ -1,0 +1,28 @@
+<h3>Sviluppatori</h3>
+
+<!-- Event Binding -->
+
+<label>Nome Dev:</label>
+<input type="text" (input)="onModNomeDev($event)">
+<p>{{nomeSviluppatore}}</p>
+
+
+<br>
+
+<!-- Two Way Data Binding -->
+<h3>Crea Sviluppatori</h3>
+
+<label>Nome Sviluppatore</label>
+<input type="text" [(ngModel)]="nomeDeveloper"><br>
+<label>Linguaggio</label>
+<input type="text" [(ngModel)]="linguaggio"><br>
+<label>Progetto</label>
+<input type="text" [(ngModel)]="progettoAssegnato"><br>
+
+<button [disabled]="!permettiCreazione" (click)="onCreaDev()" >Crea</button>
+
+<div *ngIf="developer">
+  <p>{{developer.nome}}</p>
+  <p>{{developer.linguaggio}}</p>
+  <p>{{developer.progetto}}</p>
+</div>

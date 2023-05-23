@@ -1,0 +1,30 @@
+<h3>Aggiungi Pizza</h3>
+
+<div class="mb-3 col-8">
+  <label for="" class="form-label">Id</label>
+  <input type="number" class="form-control" [(ngModel)]="idPizza">
+</div>
+<div class="mb-3 col-8">
+  <label for="" class="form-label">Nome</label>
+  <input type="text" class="form-control" [(ngModel)]="nomePizza">
+</div>
+<div class="mb-3 col-8">
+  <label for="" class="form-label">Prezzo</label>
+  <input type="number" class="form-control" [(ngModel)]="prezzoPizza" >
+</div>
+
+<button type="button" class="btn btn-primary" (click)="onAddPizza()" >Aggiungi</button>
+
+
+<div class="mt-3" *ngIf="pizza; else noPizza">
+  <h4>Nuova pizza aggiunta</h4>
+
+  <p>Id: {{pizza.id}}</p>
+  <p>Nome: {{pizza.nome}}</p>
+  <p>Prezzo: {{pizza.prezzo | currency: 'EUR'}}</p>
+
+</div>
+
+<ng-template #noPizza>
+  <p class="mt-3">Non hai ancora inserito la nuova pizza</p>
+</ng-template>
