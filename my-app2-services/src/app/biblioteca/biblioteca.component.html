@@ -1,0 +1,13 @@
+<p>biblioteca works!</p>
+<button (click)="onMostraListaLibri()">Stampa Libri</button>
+
+
+<br>
+<input type="text" [(ngModel)]="username" placeholder="inserisci il tuo username">
+<button (click)="onMostraListaLibri()">Mostra Libri</button>
+
+<ul>
+  <li *ngFor="let libro of elenco">
+    {{libro.titolo}}
+  </li>
+</ul>

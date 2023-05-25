@@ -3,7 +3,7 @@ Crea i seguenti component con la seguente struttura:
     - listaGiochi
     - creaGiochi
 
-Il gioco deve avere le seguenti propr: nome, tipo, voto, immagine
+Il gioco ( class o interface ) deve avere le seguenti propr: nome, tipo, voto, immagine
 
 Oss su tipo:
 il tipo determina il colore della card che ospita le informazioni

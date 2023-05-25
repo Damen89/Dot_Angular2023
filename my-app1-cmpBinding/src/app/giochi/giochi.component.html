@@ -1,15 +1,13 @@
 <h2>Giochi</h2>
 <div class="row">
 
-  <!-- Questa sotto è la porzione di codice da ciclare con i giochi -->
-  <div class="col-4">
-    <div class="card">
-      <img class="card-img-top" src="https://www.dragonstore.it/files/Raven_Files/Foto/31583_173508.JPG" alt="Card image cap">
-      <div class="card-body">
-        <h3 class="card-title">Title</h3>
-        <p class="card-text">Text</p>
-      </div>
-    </div>
+  <div class="col-6">
+    <app-crea-gioco (giocoCreated)="onCreaGioco($event)"></app-crea-gioco>
+  </div>
+
+
+  <div class="col-12">
+    <app-lista-giochi [gioco]="nuovoGioco"></app-lista-giochi>
   </div>
 
 </div>

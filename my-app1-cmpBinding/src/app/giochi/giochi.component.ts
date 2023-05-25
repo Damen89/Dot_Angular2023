@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Gioco } from '../model/gioco.model';
 
 @Component({
   selector: 'app-giochi',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class GiochiComponent {
 
+  nuovoGioco: Gioco;
+
+  onCreaGioco(gioco: Gioco){
+    console.log(gioco);
+    this.nuovoGioco = gioco;
+  }
 }

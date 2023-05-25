@@ -1,0 +1,17 @@
+<div class="row">
+
+  <div *ngFor="let gioco of listaGiochi" class="col-4 mb-4">
+    <div class="card"
+    [ngClass]="{tavolo: gioco.tipo === 'tavolo', online: gioco.tipo === 'online', videogame: gioco.tipo === 'videogame'}">
+      <img class="card-img-top" [src]="gioco.img" alt="foto di {{gioco.nome}}">
+      <div class="card-body">
+        <h3 class="card-title">{{gioco.nome}}</h3>
+        <p class="card-text">{{gioco.tipo}}</p>
+        <p>Voto: {{gioco.voto}}</p>
+        <button class="btn btn-primary" (click)="onLike(gioco)">Like</button>
+        <button class="btn btn-warning" (click)="onDislike(gioco)">Dislike</button>
+      </div>
+    </div>
+  </div>
+
+</div>

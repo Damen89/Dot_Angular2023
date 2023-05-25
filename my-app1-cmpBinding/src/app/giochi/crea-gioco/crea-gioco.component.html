@@ -1,0 +1,29 @@
+<div class="mb-4">
+
+  <div class="mb-3">
+    <label for="" class="form-label">Nome</label>
+  <input type="text" class="form-control" [(ngModel)]="nome">
+</div>
+
+<div class="mb-3">
+  <label for="" class="form-label">Tipo</label>
+  <select class="form-select form-select-lg" [(ngModel)]="tipo">
+    <option value="" selected disabled>Seleziona</option>
+    <option value="tavolo">tavolo</option>
+    <option value="videogame">videogame</option>
+    <option value="online">online</option>
+  </select>
+</div>
+
+<div class="mb-3">
+  <label for="" class="form-label">Immagine</label>
+  <input type="text" placeholder="Inserisci url immagine" class="form-control" [(ngModel)]="img">
+</div>
+
+<button type="button" class="btn btn-primary" (click)="onAddGioco()">Inserisci</button>
+
+<div *ngIf="avviso" class="alert alert-danger" role="alert">
+  <strong>{{avviso}}</strong>
+</div>
+
+</div>
