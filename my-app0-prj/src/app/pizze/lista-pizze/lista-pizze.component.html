@@ -1,1 +1,39 @@
-<p>lista-pizze works!</p>
+<h2>Menu Pizze</h2>
+<div class="row">
+
+  <div class="col-6">
+
+    <!-- Hover added -->
+    <div class="list-group">
+      <!-- <a href="#" class="col-4 list-group-item text-center" *ngFor="let pizza of listaPizze" >
+    {{pizza.nome}}
+  </a> -->
+      <app-pizza *ngFor="let pizza of listaPizze" [pizza]="pizza" (pizzaDettagli)="onRecuperaDettagli($event)">
+      </app-pizza>
+
+    </div>
+
+  </div>
+
+  <div class="col-6" *ngIf="pizzaDettaglio != null">
+    <div class="card ">
+      <img class="card-img-top" [src]="pizzaDettaglio.immagine" alt="Title">
+      <div class="card-body">
+        <h4 class="card-title">{{pizzaDettaglio.nome}}</h4>
+        <p class="card-text">{{pizzaDettaglio.prezzo | currency: "EUR"}}</p>
+        <p>{{pizzaDettaglio.pizzaiolo.nome}} {{pizzaDettaglio.pizzaiolo.cognome}}</p>
+        <ul>
+          <li *ngFor="let ing of pizzaDettaglio.ingredienti">
+            {{ing}}
+          </li>
+        </ul>
+      </div>
+
+      <button class="col-4 m-3 btn btn-primary">
+        <i class="bi bi-cart-plus"></i>
+      </button>
+    </div>
+
+  </div>
+
+</div>

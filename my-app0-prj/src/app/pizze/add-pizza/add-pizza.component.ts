@@ -15,7 +15,7 @@ export class AddPizzaComponent{
   pizza: Pizza;
 
   onAddPizza(){
-    this.pizza = new Pizza (this.idPizza, this.nomePizza, this.prezzoPizza);
+    // this.pizza = new Pizza (this.idPizza, this.nomePizza, this.prezzoPizza);
   }
 
 

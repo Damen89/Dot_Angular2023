@@ -7,15 +7,16 @@ export class Pizza {
   prezzo: number;
   immagine: string;
   pizzaiolo: Pizzaiolo;
+  ingredienti: string[];
 
-  // ingredienti: Ingrediente[];
 
-  constructor(id: number, nome: string, prezzo: number, immagine: string, pizzaiolo: Pizzaiolo){
+  constructor(id: number, nome: string, prezzo: number, immagine: string, pizzaiolo: Pizzaiolo, ingredienti: string[]){
     this.id = id;
     this.nome = nome;
     this.prezzo = prezzo;
     this.immagine = immagine;
     this.pizzaiolo = pizzaiolo;
+    this.ingredienti = ingredienti;
   }
 
 }
