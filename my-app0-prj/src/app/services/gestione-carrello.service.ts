@@ -18,6 +18,5 @@ export class GestioneCarrelloService {
     let item = {nome: nome, prezzo: prezzo};
     this.items.push(item);
     console.log(this.items);
-
   }
 }
