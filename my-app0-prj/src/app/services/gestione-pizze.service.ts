@@ -26,7 +26,7 @@ export class GestionePizzeService {
     {
       id:2,
       nome: "Napoli",
-      immagine: "qwerty",
+      immagine: "https://www.donnamoderna.com/content/uploads/2021/08/pizza-napoli-830x625.jpg",
       ingredienti: ["pomodoro", "aglio", "acciughe"],
       pizzaiolo: {nome: "Ciro", cognome: "Russo"},
       prezzo: 5.00
