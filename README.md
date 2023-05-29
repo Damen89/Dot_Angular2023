@@ -6,7 +6,7 @@ Repo Studenti:
 - Leonardo []
 - Monica []
 - Cristina []
-- Oleksander []
+- Oleksander [https://github.com/AlexEngDev/studenti]
 - Alessio []
 - Antonio []
 - Roman []
