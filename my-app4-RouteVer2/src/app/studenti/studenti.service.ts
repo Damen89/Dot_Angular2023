@@ -22,7 +22,7 @@ export class StudentiService {
     {
       id:2,
       nome: "Claudia Rossi",
-      corso: "JAvascript",
+      corso: "Javascript",
       status: true
     }
   ]
