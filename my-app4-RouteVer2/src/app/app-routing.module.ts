@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { StudenteComponent } from './studenti/studente/studente.component';
 import { StudentiComponent } from './studenti/studenti.component';
 
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'studenti', component: StudentiComponent, children: [
@@ -27,4 +28,6 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+}
