@@ -1,1 +1,8 @@
-<p>home works!</p>
+
+<h2 *ngIf="username; else noUser">
+  Benvenuto {{username}}
+</h2>
+
+<ng-template #noUser>
+  <h2>Benvenuto Ospite</h2>
+</ng-template>
