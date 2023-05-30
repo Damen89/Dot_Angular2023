@@ -14,6 +14,8 @@ import { DocentiComponent } from './docenti/docenti.component';
 import { DocenteComponent } from './docenti/docente/docente.component';
 import { EditDocenteComponent } from './docenti/edit-docente/edit-docente.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { NoAuthComponent } from './no-auth/no-auth.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { FormsModule } from '@angular/forms';
     CorsoComponent,
     DocentiComponent,
     DocenteComponent,
-    EditDocenteComponent
+    EditDocenteComponent,
+    LoginComponent,
+    NoAuthComponent
   ],
   imports: [
     BrowserModule,
