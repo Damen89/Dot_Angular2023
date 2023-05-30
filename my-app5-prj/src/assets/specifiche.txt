@@ -1,0 +1,8 @@
+1. Creare un app per la gestione di una pizzeria( gestione pizze, gestione panini)
+
+2. Creare due principali component pizze e panini con le rispettive rotte
+
+3. Mostrare in entrambi i component un menu
+
+4. L'accesso alle rotte deve essere limitato solo agli utenti Amministratori, quindi solo questi potranno vedere i menu.
+
