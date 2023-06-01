@@ -1,7 +1,7 @@
 APP Meteo
 Costruire app meteo
 1. Impostare 2 rotte
-R1. Meteo Attuale 
+R1. Meteo Attuale
 R2. Previsioni
 
 R1. Form di inserimento per la città. Digit la città e click sul pulsante per farmi mostrare il meteo
@@ -18,4 +18,14 @@ https://api.openweathermap.org/data/2.5/forecast/daily?q={city}&cnt={numGiorni}&
 
 Front End (bootstrap)
 Mostrare il meteo giornaliero in una struttura a piacere
-Mostrare le previsioni in delle card, una card al giorno per un massimo di 4 giorni 
+Mostrare le previsioni in delle card, una card al giorno per un massimo di 4 giorni
+
+
+Kelvin -> Celsius
+300K -> (300 - 273.16)°C
+
+
+ICONE del meteo
+<img src="https://openweathermap.org/img/wn/10d@2x.png">
+
+<img src="https://openweathermap.org/img/wn/{{icona del json: icon}}@2x.png">
