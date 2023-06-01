@@ -27,7 +27,7 @@ export class AuthorizationService {
   // }
 
   checkRole(){
-    const roleUserLogged = this.userSev.getUserRole("Anna");
+    const roleUserLogged = this.userSev.getUserRole("Gennaro");
 
     if(roleUserLogged === "Admin"){
         return true;

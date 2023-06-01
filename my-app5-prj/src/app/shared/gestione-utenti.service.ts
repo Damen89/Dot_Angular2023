@@ -10,7 +10,7 @@ export class GestioneUtentiService {
     id: 1,
     username: "Pippo",
     password: "12345",
-    role: 'Admin'
+    role: 'Base'
   }
 
   constructor() { }

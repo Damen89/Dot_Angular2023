@@ -1,0 +1,22 @@
+{
+  "studenti": [
+    {
+      "id": 0,
+      "nome": "Pippo",
+      "cognome": "Rossi"
+    },
+    {
+      "nome": "Paolo",
+      "cognome": "Bianchi",
+      "id": 1
+    }
+  ],
+
+  "docenti": [
+    {
+      "id": 0,
+      "nome": "Dario",
+      "corso": "Angular"
+    }
+  ]
+}

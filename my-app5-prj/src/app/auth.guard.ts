@@ -5,14 +5,20 @@ import { AuthorizationService } from './shared/authorization.service';
 //authGuard è una funzione, non è una classe, devo fare l'injection attraverso il metodo inject()
 export const authGuard: CanActivateFn = (route, state) => {
 
+
+  //posso lavorare con le rotte e gli url
+  console.log(route);
+  console.log(state);
+
+
   //Questo sotto è lo stesso identico principio della dependency injection solo che è fatto attraverso un metodo e non nel costruttore.
   const authService = inject(AuthorizationService);
   const router = inject(Router);
 
 
   if(authService.controllaRuolo()){
-    return true;
+    return true; //boolean
   }else{
-    return router.navigate(['/no-auth']);
+    return router.navigate(['/no-auth']); //urlTree
   }
 };

@@ -21,7 +21,7 @@ const routes: Routes = [
   ]},
   //canActivate si utilizza per controllare la rotta principale, la rotta genitore
   //canActivateChild si utilizza per controllare le rotte figlie, ovviamente se si è in presenza di rotte figlie
-  {path: 'docenti', component: DocentiComponent, canActivate: [authGuard], children:[
+  {path: 'docenti', component: DocentiComponent, canActivateChild: [authGuardChild], children:[
     {path: ':id', component: DocenteComponent},
     {path: ':id/edit', component: EditDocenteComponent}
   ]},

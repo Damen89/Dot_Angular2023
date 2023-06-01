@@ -1,0 +1,14 @@
+
+<ul>
+  <li *ngFor="let studente of listaStudenti">
+    {{studente.id}} - {{studente.nome}} {{studente.cognome}}
+  </li>
+</ul>
+
+<br>
+
+<button class="btn btn-primary" type="submit" (click)="onAddStud()">Agg Stud</button>
+
+<br>
+
+<button class="btn btn-primary" type="submit" (click)="onDeleteStud()">Elimina Stud</button>
