@@ -2,3 +2,5 @@
 2. Mostra la lista docenti
 3. Crea un form per inserire il singolo docente nella lista
 4. Accanto ad ogni nome inserisci un icona X che al click esegue l'eliminazione del singolo docente
+5. Nella App mostrare solo nomeCorso, aula, corsoDiLaura (per studenti)
+

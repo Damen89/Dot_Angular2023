@@ -27,6 +27,7 @@ export class StudentiComponent implements OnInit {
 
   onAddStud(){
     this.studServ.postStudente("Paolo", "Bianchi");
+
     this.ngOnInit();
   }
 
@@ -34,4 +35,6 @@ export class StudentiComponent implements OnInit {
     this.studServ.deleteStudente(1);
     this.ngOnInit();
   }
+
+
 }

@@ -7,13 +7,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from "@angular/common/http";
 import { StudentiComponent } from './studenti/studenti.component';
+import { DocentiComponent } from './docenti/docenti.component';
+import { CorsiComponent } from './corsi/corsi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    StudentiComponent
+    StudentiComponent,
+    DocentiComponent,
+    CorsiComponent
   ],
   imports: [
     BrowserModule,

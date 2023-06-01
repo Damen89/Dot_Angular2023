@@ -1,0 +1,21 @@
+APP Meteo
+Costruire app meteo
+1. Impostare 2 rotte
+R1. Meteo Attuale 
+R2. Previsioni
+
+R1. Form di inserimento per la città. Digit la città e click sul pulsante per farmi mostrare il meteo
+Endpoint di riferimento
+https://api.openweathermap.org/data/2.5/weather?q={city}&appid={apiKey}
+
+R2. Per accedere alle previsioni devo essere Loggato
+    Costruire un form di Login finto (le info utente vanno solo nel localStorage), se esiste l'utente gli mostro le previsioni, altrimenti mostrerò la pagina di Login.
+Anche in questo caso ci sarà un campo input nel quale inserire la città
+
+Endpoint di riferimento
+https://api.openweathermap.org/data/2.5/forecast/daily?q={city}&cnt={numGiorni}&appid={apiKey}
+
+
+Front End (bootstrap)
+Mostrare il meteo giornaliero in una struttura a piacere
+Mostrare le previsioni in delle card, una card al giorno per un massimo di 4 giorni 

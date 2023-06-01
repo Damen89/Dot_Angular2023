@@ -11,12 +11,63 @@
       "id": 1
     }
   ],
-
   "docenti": [
     {
       "id": 0,
-      "nome": "Dario",
-      "corso": "Angular"
+      "nomeDocente": "Dario",
+      "materiaDocente": "Angular",
+      "presenza": true,
+      "studentiCorso": [
+        {
+          "nome": "Gennaro",
+          "matricola": "asdfghj"
+        },
+        {
+          "nome": "Laura",
+          "matricola": "qwertyu"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "nomeDocente": "Paola",
+      "materiaDocente": "HTML",
+      "presenza": false
+    }
+  ],
+
+  "corsi": [
+    {
+      "id": 0,
+      "nomeCorso": "Angular",
+      "partecipanti": 10,
+      "aulaCorso": "3A",
+      "schedaCorso": true,
+      "annualita": 2023,
+      "dipartimento": "Informatica",
+      "corsoDiLaurea": "Triennale"
+    },
+    {
+      "id": 1,
+      "nomeCorso": "Web Design",
+      "partecipanti": 18,
+      "aulaCorso": "4B",
+      "schedaCorso": true,
+      "annualita": 2023,
+      "dipartimento": "Informatica",
+      "corsoDiLaurea": "Triennale"
+    },
+    {
+      "id": 1,
+      "nomeCorso": "JAVA",
+      "partecipanti": 25,
+      "aulaCorso": "6D",
+      "schedaCorso": true,
+      "annualita": 2023,
+      "dipartimento": "Informatica",
+      "corsoDiLaurea": "Specialistica"
     }
   ]
+
+
 }
