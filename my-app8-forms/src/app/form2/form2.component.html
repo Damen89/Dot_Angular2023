@@ -1,0 +1,81 @@
+<h2>Form Reactive</h2>
+
+<div class="row">
+  <div class="col-8">
+
+    <!-- [formGroup] serve a far capire ad Angular che è in presenza di un form annidato, un form con gruppi -->
+    <form [formGroup]="formRegistrazione" (ngSubmit)="onSubmit()">
+
+      <div class="form-group" formGroupName="userData" >
+
+        <div class="mb-3">
+          <label class="form-label">Nome</label>
+          <input type="text"
+            class="form-control" id="nome"
+            formControlName = "nome">
+        </div>
+
+        <span class="text-muted" *ngIf="!formRegistrazione.get('userData.nome').valid">
+          Inserisci un nome valido
+        </span>
+
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="text"
+            class="form-control" id="cognome"
+            formControlName="cognome">
+        </div>
+      </div>
+
+      <div formGroupName="userAddress">
+        <div class="mb-3">
+          <label class="form-label">Indirizzo</label>
+          <input type="text"
+            class="form-control" id="indirizzo"
+            formControlName="indirizzo">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Città</label>
+          <input type="text"
+            class="form-control" id="citta"
+            formControlName="citta">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Telefono</label>
+          <input type="text"
+            class="form-control" id="telefono"
+            formControlName="telefono">
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="text"
+            class="form-control" id="email"
+            formControlName="email">
+        </div>
+      </div>
+
+      <button class="btn btn-warning" type="submit">Submit</button>
+
+    </form>
+
+
+    <!-- <div class="col-6" *ngIf="submittedForm; else noSubmitted">
+      <h5>Dati utente</h5>
+      {{utente.nome}}
+      {{utente.cognome}}
+      <br>
+      {{utente.indirizzo}}
+      {{utente.citta}}
+      {{utente.telefono}}
+    </div>
+
+    <div class="col-6">
+      <ng-template #noSubmitted>Il form non è stato compilato bene</ng-template>
+    </div> -->
+
+
+  </div>
+</div>

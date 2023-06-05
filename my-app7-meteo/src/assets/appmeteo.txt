@@ -21,6 +21,21 @@ Mostrare il meteo giornaliero in una struttura a piacere
 Mostrare le previsioni in delle card, una card al giorno per un massimo di 4 giorni
 
 
+R3. Impostare un'altra rotta: "Contattaci"
+Creare il seguente form con i seguenti campi (* obbligatorio)
+- Nome* (non può contenere numeri Regex)
+- Cognome* (non può contenere numeri Regex)
+- Email* (tipo email)
+- Messaggio (max 200 caratteri)*
+- checkbox (termini e condizioni) (checked)*
+- checkbox (newsletter)
+- Pulsante di Submit (disable se il form è INVALID)
+
+IL form deve essere creato utilizzando i tag di angular material
+
+Scegli l'approccio per la gestione del form (Template Driven o Reactive)
+
+
 Kelvin -> Celsius
 300K -> (300 - 273.16)°C
 

@@ -1,0 +1,80 @@
+<h2>Form Template Driven</h2>
+
+<div class="row">
+  <div class="col-8">
+
+    <form #mioForm="ngForm" (ngSubmit)="onSubmit(mioForm)">
+
+      <!-- Uso la direttiva ngModelGroup per raggruppare le info riguardanti una sezione del form -->
+      <div #userData ="ngModelGroup" ngModelGroup="userData">
+
+        <div class="mb-3">
+          <label class="form-label">Nome</label>
+          <input type="text"
+            class="form-control" id="nome"
+            ngModel
+            name="nome"
+            required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Cognome</label>
+          <input type="text"
+            class="form-control" id="nome"
+            ngModel
+            name="cognome"
+            required>
+        </div>
+      </div>
+
+      <div #userAddress ="ngModelGroup" ngModelGroup="userAddress">
+        <div class="mb-3">
+          <label class="form-label">Indirizzo</label>
+          <input type="text"
+            class="form-control"
+            ngModel
+            name="indirizzo"
+            required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Città</label>
+          <input type="text"
+            class="form-control"
+            ngModel
+            name="citta"
+            required>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label">Telefono</label>
+          <input type="text"
+            class="form-control"
+            ngModel
+            name="telefono"
+            required>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+
+
+    <div class="col-6" *ngIf="submittedForm; else noSubmitted">
+      <h5>Dati utente</h5>
+      {{utente.nome}}
+      {{utente.cognome}}
+      <br>
+      {{utente.indirizzo}}
+      {{utente.citta}}
+      {{utente.telefono}}
+    </div>
+
+    <div class="col-6">
+      <ng-template #noSubmitted>Il form non è stato compilato bene</ng-template>
+    </div>
+
+
+  </div>
+</div>
