@@ -3,7 +3,7 @@
 
 Repo Studenti:
 - Angelo [https://github.com/AngeloDima/]
-- Leonardo []
+- Leonardo [https://github.com/leolicen]
 - Cristina []
 - Oleksander [https://github.com/AlexEngDev/studenti]
 - Alessio [https://github.com/ngAlessioDev]
